@@ -1,0 +1,90 @@
+ //main-nav
+ nav{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+ }
+ .main-movie-nav{
+    position: relative;
+    z-index:99;
+    top: 0;
+    padding:.5rem 0;
+    background: $color-secondary;
+    border-bottom: 3px solid #4fd5d6;
+    &__inner{
+        padding: 0 1.7rem;
+        width: 90%;
+        max-width:1300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        @media(max-width:1000px){
+            padding: 0;
+        }
+
+        &__left{
+            align-self: center;
+            
+            &__item{
+                margin-right: 3rem;
+                color: white;
+                font-size: 1.2rem;
+                transition: all ease-in-out .2s;
+                @media(max-width:1000px){
+                    display: none;
+                  }
+                &:hover{
+                    color:#4fd5d6;
+                }
+                &.is-active{
+                    color:#4fd5d6;
+                }
+            }
+        }
+
+        &__right{
+            max-width: 50%;
+        
+            @media(max-width:1200px){
+                padding-right: 1rem;
+              }
+            @media(max-width:1000px){
+                max-width: 70%;
+                padding-right: 5rem;
+              }
+        }
+    }
+}
+
+.search-bar{
+    color: white;
+    position: relative;
+    & input{
+        border: none;
+        outline: none;
+        width: 350px;
+        max-width: 100%;
+        height: 40px;
+        border-radius: 2px;
+        font-size: 1.2rem;
+        background: rgba(white,.07);//transparent;
+        color: white;
+        //border-bottom: 2px solid white;
+        padding: 0 1rem;
+        text-transform: uppercase;
+        transition: all ease-in-out .2s;
+        &.hidden{
+            width: 0;
+            padding: 0;
+        }
+    }
+    & i{
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top:50%;
+        transform:translateY(-50%);
+    }
+}

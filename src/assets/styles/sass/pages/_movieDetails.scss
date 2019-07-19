@@ -1,0 +1,38 @@
+.cast-container{
+    display: flex;
+    justify-content: center;
+    padding: 4.5rem 0 0 0;
+    &__inner{
+       width: 95%;
+       max-width: 1000px;
+       &__list{
+         display: flex;
+         margin-top: 2rem;
+
+         @media(max-width:800px){
+           justify-content: center;
+           flex-wrap: wrap;
+         }
+       }
+    }
+}
+
+.trailer-container{
+  display: flex;
+  justify-content: center;
+  padding: 4.5rem 0 0 0;
+  &__inner{
+    width: 95%;
+    max-width: 1000px;
+    & iframe{
+      display: block;
+      margin-top: 2rem;
+      width: 700px;
+      max-width: 100%;
+      min-width: 320px;
+      height: 400px;
+      //min-width: 320px;
+    }
+  }
+
+}

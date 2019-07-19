@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
+@import "abstracts/variables";
+
+@import "base/base";
+
+@import "components/mainMovieCard";
+@import "components/slider";
+@import "components/actorCard";
+@import "components/movieDetails";
+@import "components/form";
+@import "components/filterMovies";
+
+@import "layout/header";
+@import "layout/loader";
+@import "layout/pagination";
+@import "layout/topNavigation";
+@import "layout/mobileNavigation";
+@import "layout/scrollTopButton";
+@import "layout/userNavigation";
+
+@import "pages/movieDetails";
+
+
+
+
+
+
+
+
+
+  

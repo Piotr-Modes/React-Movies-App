@@ -1,0 +1,10 @@
+.scrollTopButton{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 3.5rem;
+    background: transparent;
+    color: $color-primary;
+    z-index: 99999;
+    cursor: pointer;
+}

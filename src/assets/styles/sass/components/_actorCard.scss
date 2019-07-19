@@ -1,0 +1,24 @@
+//actor-card
+
+.actor-card{
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    padding-bottom: .6rem;
+    &__photo{
+
+    }
+    &__text-box{
+      padding:.3rem 0 0 .8rem;
+      max-width: 9.9rem;
+      &__name{
+          font-weight: 600;
+          margin: .3rem 0 0 0;
+      }
+      &__character{
+          font-size: .9rem;
+          margin: .1rem 0 0 0;
+      }
+    }
+}

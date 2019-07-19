@@ -1,0 +1,75 @@
+.user-nav-button{
+    position: absolute;
+    color: white;
+    top: .7rem;
+    right: 3rem;
+    z-index: 99;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition:all ease-in-out .2s;
+    @media(max-width:600px){
+        right: 2rem;
+    }
+
+    &__initials{
+        background: #4fd5d6;
+        border-radius: 50%;
+        height: 3rem;
+        text-align: center;
+        width: 3rem;
+        padding-top: .7rem;
+        transform: translateY(-.3rem);
+    }
+   
+    &:hover{
+      cursor:pointer;
+      transform:scale(1.1);
+    }
+  }
+  
+.user-nav-overlay{
+    position:absolute;
+    top:0;
+    right:0;
+    max-width: 100vw;
+    //width: 300px;
+    background: $color-secondary-light;
+    padding-top:5rem;
+    padding-bottom:1rem;
+    padding-left:1.5rem;
+    transform:translateY(-101%);
+    transition:all ease-in-out .3s;
+    opacity: 0;
+    z-index: 0;
+    border-bottom: $color-primary 3px solid;
+
+    &--open{
+        z-index: 9;
+        opacity: 1;
+        transform:translateY(0);
+    }
+
+    &__option{
+      text-align: right;
+      display: block;
+      font-size: 1.5rem;
+      padding:1rem 3rem;
+    //   /padding-right: 3rem;
+      color:white;
+      transition: all .2s ease-in-out;
+      cursor: pointer;
+      &a{
+        color:white;
+        & i{
+          padding-right:1rem;
+        }
+        &.is-active{
+          color:#4fd5d6;
+        }
+      }
+      &:hover{
+        color:#4fd5d6;
+      }
+
+    }
+}

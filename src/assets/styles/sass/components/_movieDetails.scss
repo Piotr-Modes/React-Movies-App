@@ -1,0 +1,107 @@
+.movie-details-container {
+    position:relative;
+    padding: 3rem 0;
+    display:flex;
+    justify-content: center;
+
+    &__background-overlay {
+      background: url('https://ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/splay/2017/05/blade-runner-2049-1180x664.jpg');
+      background-position:top;
+      background-repeat:no-repeat;
+      background-size: 100% auto;
+      filter: grayscale(100%)  brightness(2);
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+
+      @media (max-width:1030px) {
+         background-size: auto 100%;
+      }
+    }
+
+    &__color-overlay {
+      background: rgba(black,.9);//rgba(#4FD5D6,.8);
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    }
+
+    &__inner {
+      color:white;
+      position:relative;
+      width:95%;
+      max-width: 1000px;
+      display:flex;
+      justify-content: center;
+      
+      @media (max-width:800px) {
+        flex-wrap: wrap;
+      }
+
+      &__poster {
+        width:30%;
+        min-width: 320px;
+        align-self:center;
+      }
+
+      &__content {
+        padding:1rem 3.5rem;
+        width:70%;
+        min-width: 320px;
+
+        @media (max-width:800px) {
+          width: 100%;
+          padding-top: 3rem;
+        }
+
+        &__title {
+          font-size: 3.5rem;
+        }
+
+        &__actions {
+            margin-top:2.5rem;
+
+          & i {
+            margin-right:2rem;
+            font-size: 2rem;
+            cursor: pointer;
+
+            &:active {
+              transform: scale(.9);
+            }
+          }
+        }
+
+        &__overview {
+          margin-top:2.5rem;
+
+          &__title {
+              //font-size: 2.5rem;
+          }
+
+          & p {
+              line-height: 1.5rem;
+              font-size: 1.1rem;
+          }
+        
+        }
+
+        &__director {
+          margin-top:2.5rem;
+          
+          &__title {
+          
+          }
+
+          & p {
+              font-size: 1.1rem;
+              font-weight: 600;
+          }
+        }
+      }
+    }  
+  }

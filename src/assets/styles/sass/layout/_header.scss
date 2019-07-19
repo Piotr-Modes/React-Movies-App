@@ -1,0 +1,31 @@
+header{
+    background: black;
+    padding-bottom: 7rem;
+    padding-top: 5rem;
+    position: relative;
+    z-index: 99999;
+
+    & .header__title{
+        color: white;
+        font-size: 4rem;
+        font-family: PT Sans Narrow,Open Sans,sans-serif;
+        letter-spacing: 2rem;
+        margin-bottom: 3rem;
+        text-align: center;
+
+        @media(max-width: 600px){
+            font-size: 2.5rem;
+            letter-spacing: 1rem;
+            margin-left: .6rem;
+        }
+    }
+}
+
+// .header__title{
+//     color: white;
+//     font-size: 4rem;
+//     font-family: PT Sans Narrow,Open Sans,sans-serif;
+//     letter-spacing: 2rem;
+//     margin-bottom: 3rem;
+//     text-align: center;
+// }

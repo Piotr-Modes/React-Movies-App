@@ -1,0 +1,81 @@
+.form-container{
+    display: flex;
+    height: calc(100vh - 5rem);
+    &__form{
+        max-width: 90%;
+        margin: auto;
+        padding: 2rem;
+        color: white;
+        background: #21242e;
+        &__title{
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        &__field{
+            position: relative;
+            margin: 3rem 0;
+            &__label{
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                transition: all .2s ease-in-out;
+            }
+            &__input{
+                max-width: 100%;
+                position: relative;
+                width: 270px;
+                outline: none;
+                color: white;
+                font-size: 1.4rem;
+                padding: .5rem 1rem;
+                padding-right: 2.5rem;
+                background: none;
+                border: none;
+                border-bottom: 2px solid white;
+                &:focus{
+                    border-bottom: 2px solid #4fd5d6;
+                }
+                &:focus ~ .form-container__form__field__label, 
+                &:valid ~ .form-container__form__field__label{
+                    transform: translate(-.6rem, -1.5rem) scale(0.85);
+                    opacity: .8; 
+                }
+            }
+            & i{
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                font-size: 1.4rem; 
+            }
+            // &:focus-within{
+            //     & i{
+            //         color: #4fd5d6;
+            //     }
+            // }
+        }
+        &__button-container{
+            margin-top: 4rem;
+            &__button{
+                background: #4fd5d6;
+                border: none;
+                color: white;
+                font-size: 1.8rem;
+                padding: .5rem 2rem;
+                margin: 0 auto;
+                display: block;
+                cursor: pointer;
+                transition: .2s ease-in-out;
+                &:hover{
+                    background: white;
+                    color: #4fd5d6;
+                }
+            }
+        }
+    }
+    // &:focus-within{
+    //     & label {
+    //         transform: translateY(2.5rem) scale(.9);
+    //     }
+    // }
+}
