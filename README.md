@@ -1,3 +1,12 @@
+# Portfolio
+React Movies.
+https://react-movies-5cab0.firebaseapp.com
+
+This project was written using React, Redux and Firebase.
+I had some real fun exploring things like higher order components or render props pattern.
+
+Enjoy!
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
