@@ -1,5 +1,5 @@
-# Portfolio
-React Movies.
+# React Movies
+see it live:
 https://react-movies-5cab0.firebaseapp.com
 
 This project was written using React, Redux and Firebase.
